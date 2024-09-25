@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-white">
 
 <head>
     <meta charset="UTF-8">
@@ -27,6 +27,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'button-color': '#FF4240',
               }
             }
           }
@@ -38,11 +39,58 @@
             .font-manrope {
                 font-family: "Manrope", sans-serif;
             }
+            
       </style>
 
-<body>
-    <header>
-
+<body class="font-manrope">
+    <header class="container lg:w-10/12 border-4 border-red-500 mx-auto">
+        <nav>
+            <div class="navbar ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow bg-base-100">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class=" text-[#131318] text-2xl md:text-4xl font-extrabold">Hockey<span class="text-button-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#424247] text-base font-normal">
+                    <li><a class="text-button-color font-bold">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-6">
+                    <div>
+                        <i class="text-[#424247] fa-solid fa-magnifying-glass hidden lg:flex"></i>
+                    </div>
+                  <a class="btn bg-button-color text-white text-xl font-bold border-none md:px-6 ">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
     </header>
     <main>
 
